@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from demo.deviserweb.com/finiti/image-bg/style-2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Feb 2018 00:22:08 GMT -->
+<head>     
+  
+        <!-- TITLE OF SITE --> 
+        <title> inCIToS 2K18</title>
+ 
+
+        <meta charset="utf-8">
+        <meta name="description" content="Multipage Landing Page Which is Designed Based on Twitter Bootstrap 3.3.*" />
+        <meta name="keywords" content="Finiti, parallax, one page, multipage, responsive, event landing, html template" />
+        <meta name="author" content="Santush Deb Nath, deviserweb">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+        <!--   FAV AND TOUCH ICONS   -->
+        <link rel="icon" href="http://demo.deviserweb.com/finiti/assets/images/favicon.ico">
+        <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../../assets/images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../../assets/images/apple-touch-icon-114x114.png">
+
+
+        <!-- GOOGLE FONTS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+        <!-- BOOTSTRAP CSS -->
+        <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+
+
+        <!-- FONT ICONS -->
+        <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../assets/css/icomoon.css">
+
+
+        <!-- Pop Up Images -->
+        <link rel="stylesheet" href="../../assets/css/magnific-popup.css">
+
+
+        <!-- CAROUSEL SLIDERS -->
+        <link rel="stylesheet" href="../../assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="../../assets/css/owl.theme.css">
+        <link rel="stylesheet" href="../../assets/css/owl.transitions.css">
+
+
+        <!-- LIGHTBOX FOR SCRENSHOT CAROUSEL -->
+        <!--<link rel="stylesheet" href="css/imagelightbox.css">-->
+
+        <!-- FLEX SLIDER CSS -->
+        <link rel="stylesheet" href="../../assets/css/flexslider.css">
+
+        <!--  CSS3 ANIMATE CSS  -->
+        <link rel="stylesheet" href="../../assets/css/animate.css">
+
+        <!--  Hover effect CSS  -->
+        <link rel="stylesheet" href="../../assets/css/hover-effect.css">
+
+        <!--   COUSTOM CSS link  -->
+        <link rel="stylesheet" href="../../assets/css/style.css">
+        <link rel="stylesheet" href="../../assets/css/responsive.css">
+
+        <!-- COLOR SCHEME -->
+        <link rel="stylesheet" href="../../assets/css/colors/forestGreen.css" type="text/css" id="theme-link" />
+
+        <style type="text/css">
+            .photo-grid {
+    margin: 1em auto;
+    text-align: center;
+}
+
+.photo-grid .grid-item {
+    border: 5px solid white;
+    display: inline-block;
+    margin: 1em;
+}
+
+.photo-grid img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.photo-grid figure {
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.photo-grid figcaption {
+    background: rgba(0,0,0,0.8);
+    color: white;
+    display: table;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.photo-grid figcaption p {
+    display: table-cell;
+    font-size: 1.5em;
+    position: relative;
+    top: -40px;
+    vertical-align: middle;
+}
+
+
+.photo-grid .grid-item:hover figcaption {
+    opacity: 1;
+}
+
+.photo-grid img {
+    display: block;
+    height: auto;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms;
+    max-width: 100%;
+}
+
+.photo-grid .grid-item:hover img {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+
+/* to change size of image in events*/
+.photo-grid figcaption p {
+    display: table-cell;
+    font-size: 1.5em;
+    position: relative;
+    top: -40px;
+    width: 300px;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    vertical-align: middle;
+}
+
+.photo-grid .grid-item:hover figcaption p {
+    -moz-transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+}
+
+.photo-grid figcaption {
+    background: rgba(0,0,0,0.8);
+    color: white;
+    display: table;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms;
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    transition-delay: 100ms;
+    z-index: 100;
+}
+
+.unassign {
+  width: 35%;
+  display:inline-block;
+  font-size: 2em;
+  font-weight: 900;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.assign {
+  width: 35%;
+  display:inline-block;
+  font-size: 2em;
+  font-weight: 900;
+  padding: 10px;
+  cursor: pointer;
+}
+        </style>
+    <script type="text/javascript">
+        document.getElementById('assign').addEventListener("click", function() {
+ alert("Assign!") 
+});
+
+document.getElementById('unassign').addEventListener("click", function() {
+ alert("Unassign!") 
+});
+    </script>
+    </head>
+    <body>
+        
+        <!-- Start: Header Section 
+        ==================================-->
+        <header class="header-background header " id="header" data-stellar-background-ratio="0.5"> 
+            <div class="fix header-overlay overlay-color">
+
+                <!-- Start: Navbar Area  -->
+                <div class="header-navbar" id="header-navbar">
+                    
+                    <!-- Navbar Option -->
+                    <nav class="navbar-inverse header-nav" id="myNavbar">
+                        <ul class="myNavbarUl nav navbar-nav"> 
+                            <li>
+                                <a id="toggle-switcher" class="navbar-btn-menu btn-left">
+                                    <!--<i class="fa fa-angle-double-right"></i>-->
+                                    <span class="lines"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul id="navbar-nav" class="myNavbarUl nav navbar-nav">
+                            
+                            <li class="section-selector"><a href="index.html">Home</a></li>
+                            <li class="section-selector"><a href="coding.html">Te'C'oder</a></li>
+                            <li class="section-selector"><a href="relay.html">CODE RELAY</a></li>
+                            <li class="section-selector"><a href="blind.html">BLIND CODING</a></li> 
+                            <li class="section-selector"><a href="web.html" class="blog">WEBISMO</a></li> 
+                            <li class="section-selector"><a href="treasure.html">TESOROCAZA </a></li>
+                            <li class="section-selector"><a href="troll.html">TROLL MAESTRO</a></li>
+                            <li class="section-selector"><a href="best.html">ULTIMATE ENGINEER</a></li>
+                            <li class="section-selector"><a href="quiz.html">inQUIZitive </a></li> 
+                            <li class="section-selector"><a href="foto.html" class="blog">PIXAMORA </a></li> 
+                            <li class="section-selector"><a href="talk.html">EXPERT TALK - CYBER SECUTIRY</a></li>
+                        </ul>
+                        
+                    </nav> <!-- End: navbar navbar-inverse  -->
+                </div>
+                <!-- End: Navbar Area  -->
+                
+                <div class="container" id="header-body">
+                    <div class="row header-body section-separator">
+                        
+                        <!-- Logo Goes Here -->
+                        <img src="../../assets/images/logo.jpg" alt="This is a logo" class="wow fadeInDown">
+
+                        <!-- Headline Goes HEre -->
+                        <h1 class="wow fadeInDown" data-wow-delay="0.3s">
+                            inCIToS 2K18
+                        </h1>
+
+                        <!-- Detail -->
+                        <p class="wow fadeInDown" data-wow-delay="0.6s">
+                        Computer Science and Information Technology, College of Engineering,Thalassery
+                        </p>
+
+                        <!-- Start: CountDown area -->
+                        <div class="count_down count_down-1 col-md-8 col-md-offset-2 wow fadeInDown" data-wow-delay="0.9s">
+                        </div>
+                        <!-- End: CountDown area -->
+                        
+                        
+                        
+
+                    </div>
+                    <!-- End: header-body  -->
+                </div> 
+                <!-- End: container  -->
+
+
+            </div> 
+            <!-- End: fix header-overlay overlay-color  -->
+        </header> 
+        <!--End: Header Area
+        ===========================-->
+
+
+        
+       
+        <!-- Start: Two cols Section 
+        ==============================-->
+        <section id="two-cols-description-with-slider" class="two-cols-description-with-slider">
+            <div class="container-fluid">
+                <div class="row two-cols-description-with-slider-body">
+
+                         <br><br>
+                        <img src="../../assets/images/speakers-img/blind.jpg" width="500" alt="" title=""/>
+                                                        
+                    <!-- Start: TWO COLS DESCRIPTION TEXT -->
+                    <div class="description-info description-height col-md-6 col-sm-12 wow fadeInRight">
+
+                        <div class="description-info-inner section-separator">
+                            
+                            <!-- Start: Section Header -->
+                            <div class="section-header align-left">
+                                
+                                <h2 class="section-heading">BLIND CODING</h2>
+                                    <p>Got good hands in Coding? Ever thought of writing the codes with MONITOR OFF? Are you confident enough to code simple programs without looking at your monitor screen?
+                                    Then You Are At Right Place !
+                                    Blind coding is a C/C++/Java/Python programming event where competitors need to write the program by switching off monitors.
+                                
+                            </div>
+                            <!-- End: Section Header -->
+
+
+                        <b>Event Managers</b><br>
+                        <span><i class="fa fa-user" aria-hidden="true"></i></span> KASHYAP <br>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span> 7736319914<br>
+                        <span><i class="fa fa-user" aria-hidden="true"></i></span> VISHRUDH <br>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span> 9037377040<br>
+
+                        <br>
+                        <span>Registration Fees : <i class="fa fa-rupee" aria-hidden="true"></i></span> 50 ( spot reg. )<br>
+                        <span>First Prize : <i class="fa fa-rupee" aria-hidden="true"></i></span> 3000<br>
+                        <span>Second Prize : <i class="fa fa-rupee" aria-hidden="true"></i></span> 1000<br>
+
+                    </div>
+                    <!-- End: TWO COLS DESCRIPTION TEXT -->
+
+                </div>
+                <!-- End: .row .two-cols-description-with-slider-body -->
+            </div>
+            <div style="margin-left: 4%;">
+                •   The Contest consists of a single programming question.<br>
+                •   Time alloted is 60 minutes.<br>
+                •   The participate can turn on the monitor for 15 seconds TWICE during this 60 minutes.<br>
+                •   The participant will score maximum points on correctly solving all the test cases.<br>
+                •   Partial marking will be there in case the participant correctly solves some of the test cases.<br>
+                •   Higher preference will be given to code with least number of errors.<br>
+                •   Programming Languages allowed: C, C++, Java, Python<br>
+                •   There may be screening if required.  <br>
+                •   Any malpractice will lead to disqualification. <br>
+                •   All participants must be present for the event at the specified time. <br>
+                •   Prize money depends on percentage of completion.<br>
+
+                <br>
+                <em>Participation certificates will be provided.<br><b>NOTE: In case of any disputes, the decisions taken by the Executive Committee will be bound and final.</b></em>
+
+                        </div>
+                    </div><br><br>
+            <!-- End: Container-fluit -->
+        </section>
+        <!-- End: Two cols Section 
+        ==============================-->
+
+        
+       
+        <!-- Start: Map and Contact Area
+        =============================== -->
+ <section>
+            <br><br>
+           <br><br><br><br><br><br>
+        </section>
+        <!-- End: Map and Contact Area
+        =============================== -->
+
+
+        <!-- Start: Footer Area
+        =============================== -->
+        <footer class="image-footer" data-for="#map_contact"> 
+            <div class="container">
+                <div class="row footer-body section-separator">
+                    
+                  
+                    <!-- Social Icon Goes Here  -->
+                    <div class="social-icon col-xs-12">
+                        <ul class="nav">
+                            <li><a href="https://www.facebook.com/incitos/" class="btn btn-1 btn-top"> <i class="fa facebook fa-facebook"></i> </a></li>
+                            <li><a href="https://www.instagram.com/incitos/" class="btn btn-1 btn-top"> <i class="fa twitter fa-instagram"></i> </a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="copyright col-xs-12">
+                        <p>Designed and Developed by CSE </p>
+                    </div>
+                    
+
+                </div><!-- End: .row .footer-body .section-separator  -->
+            </div> <!-- End: .container  -->
+        </footer> 
+        <!-- End: Footer Area  
+        =====================================-->
+
+        <!-- SCRIPTS 
+        ========================================-->
+        <script src="../../assets/js/jquery-1.11.3.js"></script>
+        <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../assets/js/matchMedia.js"></script>
+        <script src="../../assets/js/navbar.matchMedia.js"></script>
+        <script src="../../assets/js/jquery.ajaxchimp.min.js"></script>
+        <script src="../../assets/js/jquery.stellar.min.js"></script>
+        <script src="../../assets/js/jquery.scrollTo.min.js"></script>
+        <script src="../../assets/js/jquery.localScroll.min.js"></script>
+        <script src="../../assets/js/smoothscroll.js"></script>
+        <script src="../../assets/js/owl.carousel.min.js"></script>  
+        <script src="../../assets/js/jquery.nav.js"></script>    
+        <script src="../../assets/js/wow.min.js"></script>   
+        <script src="../../assets/js/owl.carousel.min.js"></script>
+        <script src="../../assets/js/jquery.countdown.js"></script>
+        <script src="../../assets/js/jquery.flexslider-min.js"></script>
+        <script src="../../../../cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="../../assets/js/jquery.counterup.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="../../assets/js/jquery.magnific-popup.min.js"></script>
+        
+        <!-- Custom Script 
+        ==========================================-->
+        <script src="../../assets/js/custom-scripts.js"></script>
+
+
+
+        <!-- CUSTOMIZER :: FOR DEMO ONLY 
+        ==========================================-->
+        <script src="../../demo-style/js/main.js"></script>
+
+        
+    
+    </body>
+
+
+<!-- Mirrored from demo.deviserweb.com/finiti/image-bg/style-2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Feb 2018 00:22:50 GMT -->
+</html>
